@@ -1,38 +1,142 @@
+*{
+  background-color: #000;
+}
+h1,h2,h3,h4 {
+  font-family: "Koulen" , sans-serif;
+  font-weight: 400px;
+}
+p {
+  font-family: "Arial", sans-serif;
+}
+.heading {
+  color: #fff;
+  text-align: center;
+  font-size: 52px;
+}
 .App {
+  background-color: #000;
+}
+.layout {
+  margin: 0 140px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  margin: 50px 0px 25px 0px;
+}
+.mainDog {
+  margin-bottom: 20px;
+}
+.social {
+  padding: 5px 5px;
+}
+.button {
+  margin-top: 20px;
+  padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid #fff;
+  line-height: 42px;
+  border-radius: 10px;
+  min-width: 250px;
+  color: #fff;
+  font-family: "Koulen" , sans-serif;
+  font-size:42px;
+}
+.section3,.section4 {
+  display: block;
+  color:#fff;
+  text-align: center;
+}
+.runningImg {
+  max-width: 300px;
+  margin: 10px 10px;
+  border: 5px solid #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.runningBlockInside {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  animation: runningAnimation 8s linear infinite;
+}
+.runningBlockInside2 {
+  display: flex;
+  animation: runningAnimation2 8s linear infinite;
 }
 
-.App-link {
-  color: #61dafb;
+.runningBlock {
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes runningAnimation {
+  0% {
+    transform: translateX(0);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.runningBlock2 {
+  overflow: hidden;
+}
+
+@keyframes runningAnimation2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.runningImgBlock {
+  flex-shrink: 0;
+}
+
+.section4 {
+}
+.memeBlockMob {
+  display: none;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+.memeBlock img  {
+  text-align: center;
+  max-width: 100%;
+}
+.copyText {
+  color: #838383;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1450px) and (min-width: 1200px) {
+  
+  .img1 {
+    max-width: 407px;
+    height: 345px;
+  }
+  .img2 {
+    max-width: 613px;
+    height: 345px;
+  }
+  .img3 {
+    width: 495px;
+    height: 294px;
+  }
+  .img4 {
+    width: 524px;
+    height: 294px;
+  }
+  .img5 {
+    width: 589px;
+    height: 654px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .memeBlockMob{
+    display: block;
+  }
+  .memeBlock{
+    display: none;
   }
 }
