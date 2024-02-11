@@ -39,9 +39,9 @@ function App() {
           <div className="dogSocBtn">
             <img alt="dog" className="mainDog" src={mainDog}/>
             <div className="socialBlock">
-              <a href="https://t.me/grumpycharlie" target="_blank"><img alt="telegram" className="social" src={tg}/></a>
-              <a href="https://twitter.com/grumpycharlie_" target="_blank"><img alt="telegram" className="social" src={tw}/></a>
-              <a href="https://www.instagram.com/charlie_the_griffon" target="_blank"><img alt="telegram" className="social" src={inst}/></a>
+              <a href="https://t.me/grumpycharlie" target="_blank" rel="noopener"><img alt="telegram" className="social" src={tg}/></a>
+              <a href="https://twitter.com/grumpycharlie_" target="_blank" rel="noopener"><img alt="telegram" className="social" src={tw}/></a>
+              <a href="https://www.instagram.com/charlie_the_griffon" target="_blank" rel="noopener"><img alt="telegram" className="social" src={inst}/></a>
             </div>
             <div className="buttonBlock">
               <a href="https://raydium.io/"><button className="button">BUY ${ticker}</button></a>
