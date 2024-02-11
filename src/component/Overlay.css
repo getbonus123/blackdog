@@ -33,6 +33,7 @@
     /* Add this keyframe to create the floating effect */
     75% {
       transform: translateY(40px);
+      display: none;
     }
   }
   

@@ -32,7 +32,6 @@ function App() {
 
   return (
     <div className="App">
-      <Overlay logoSrc={logo} duration={1200} />
       <div className="layout">
         <div className="main">
           <div className="logoBlock">
