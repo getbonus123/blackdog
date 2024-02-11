@@ -23,6 +23,7 @@ import meme3 from './assets/meme3.png'
 import meme4 from './assets/meme4.png'
 import meme5 from './assets/meme5.png'
 import desk from './assets/desktopmemes.png'
+import Overlay from './component/Overlay'
 import './App.css';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <div className="App">
+      <Overlay logoSrc={logo} duration={1200} />
       <div className="layout">
         <div className="main">
           <div className="logoBlock">
@@ -40,7 +42,7 @@ function App() {
             <img alt="dog" className="mainDog" src={mainDog}/>
             <div className="socialBlock">
               <a href="https://t.me/grumpycharlie" target="_blank" rel="noreferrer"><img alt="telegram" className="social" src={tg}/></a>
-              <a href="https://twitter.com/grumpycharlie_" target="_blank" rel="noreferrer"><img alt="telegram" className="social" src={tw}/></a>
+              <a href="https://twitter.com/grumpiecharlie" target="_blank" rel="noreferrer"><img alt="telegram" className="social" src={tw}/></a>
               <a href="https://www.instagram.com/charlie_the_griffon" target="_blank" rel="noreferrer"><img alt="telegram" className="social" src={inst}/></a>
             </div>
             <div className="buttonBlock">
