@@ -23,7 +23,6 @@ import meme3 from './assets/meme3.png'
 import meme4 from './assets/meme4.png'
 import meme5 from './assets/meme5.png'
 import desk from './assets/desktopmemes.png'
-import Overlay from './component/Overlay'
 import './App.css';
 
 function App() {
